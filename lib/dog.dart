@@ -2,11 +2,13 @@ class Dog {
   final int id;
   final String name;
   final int age;
+  final int someValue;
 
   const Dog({
     required this.id,
     required this.name,
     required this.age,
+    required this.someValue,
   });
 
   Map<String, dynamic> toJson() {
@@ -22,6 +24,7 @@ class Dog {
       id: json['id'],
       name: json['name'],
       age: json['age'],
+      someValue: json['someValue'],
     );
   }
 
